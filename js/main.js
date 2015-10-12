@@ -42,9 +42,11 @@ function addZero(value) {
   var diffSubstraction = amountNew - amountOriginal;
   var diffLaptops = Math.floor(diffSubstraction/50000);
   var diffEmployees = Math.floor(diffSubstraction/(50000*12));
+  var diffMercedes = Math.floor(diffSubstraction/19197500);
   $('#bd-diff-subtraction').html(addCommas(diffSubstraction.toString()));
   $('#bd-diff-laptops').html(addCommas(diffLaptops.toString()));
   $('#bd-diff-employees').html(addCommas(diffEmployees.toString()));
+  $('#bd-diff-mercedes').html(addCommas(diffMercedes.toString()));
 }
 
 window.onload = function () {
